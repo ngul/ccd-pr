@@ -22,8 +22,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve('dist', 'index.html'));
 });
 
-const port = process.env.PORT || 5000;
-console.log('GitHub PR Dashboard');
+const port = process.env.PORT || 8000;
+console.log('CCD PR Dashboard');
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
